@@ -163,6 +163,53 @@ main>section img{max-width:100%}
 .auto-carousel .slide img{content-visibility:visible;backface-visibility:hidden}.auto-carousel .carousel-belt{contain:layout style}.auto-carousel .carousel-track{contain:layout style}
 html,body{scroll-padding-top:0}body{overscroll-behavior-y:auto}main{display:flow-root}main>.offer:first-child{margin-top:0}main>section:first-of-type{margin-top:0}
 
+
+/* Desktop readability and scale improvements; mobile remains unchanged */
+@media(min-width:1024px){
+ body{font-size:18px;line-height:1.62}
+ main>section{padding-top:88px!important;padding-bottom:88px!important}
+ main>section>h2{font-size:clamp(39px,3.35vw,54px);line-height:1.13;max-width:1080px}
+ main>section>h3{font-size:clamp(24px,2vw,30px)}
+ main>section>p,main>section>.plan-intro{font-size:20px;max-width:1000px;line-height:1.65}
+ main>section>small,main>section .plan-eyebrow,main>section .calc-eyebrow{font-size:14px;letter-spacing:.08em}
+ main>section:first-of-type{min-height:700px;padding-top:90px!important;padding-bottom:96px!important;column-gap:clamp(42px,5vw,105px)}
+ main>section:first-of-type>h1{font-size:clamp(54px,4.8vw,80px);max-width:820px}
+ main>section:first-of-type>p{font-size:21px;max-width:720px}
+ main>section:first-of-type>.hero-art img{max-width:min(100%,610px)!important;max-height:640px}
+ main>section:first-of-type>.chips{max-width:740px;gap:13px}
+ main>section:first-of-type>.chips .chip{font-size:16px;padding:16px 12px}
+ main>section .btn{font-size:18px;padding:20px 26px;max-width:610px}
+ main>section:first-of-type>.btn{width:min(100%,610px)}
+ main>section>.panel{max-width:1080px;padding:28px 34px;font-size:19px}
+ main>section .panel strong{font-size:21px}
+ main>section>.check{max-width:1000px;font-size:19px;padding:15px 0}
+ main>section .calc-shell{max-width:1200px}
+ main>section .calc-controls,main>section .calc-results{padding:45px 42px}
+ main>section .calc-heading{max-width:920px}
+ main>section .calc-heading p{font-size:20px}
+ main>section .plan-choice-grid{max-width:1240px;gap:28px}
+ main>section .plan-choice{padding:30px}
+ main>section .plan-choice h3{font-size:31px}
+ main>section .plan-choice p{font-size:18px}
+ main>section .plan-choice-btn{font-size:18px;padding:17px 22px}
+ main>section#oferta{column-gap:36px}
+ main>section#oferta>.panel{max-width:640px;padding:34px 32px}
+ main>section#oferta>.panel h2{font-size:clamp(27px,2.1vw,36px)}
+ main>section#oferta>.panel .check{font-size:18px;padding:14px 0}
+ main>section#oferta>.panel .price{font-size:68px}
+ main>section .access-card{max-width:1120px}
+ main>section .product-showcase{max-width:1200px}
+ main>section .faq details,main>section .faq #faqs{max-width:1020px}
+ main>section .faq summary{font-size:19px;padding:20px 24px}
+ main>section .faq details p{font-size:18px}
+ main>section .brownie-highlight{width:300px;min-width:300px;height:325px;max-width:300px}
+ main>section .feedback-slide{width:270px;min-width:270px;height:485px;max-width:270px}
+ main>section .flavor-card{min-width:270px}
+}
+@media(min-width:1440px){
+ main>section{padding-left:max(70px,calc((100vw - 1510px)/2))!important;padding-right:max(70px,calc((100vw - 1510px)/2))!important}
+}
+
 #lovable-badge { display: none !important; }
 </style><!-- Meta Pixel Code -->
 <script>
