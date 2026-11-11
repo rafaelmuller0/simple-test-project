@@ -379,9 +379,11 @@ document.querySelectorAll('a[href="#oferta"]').forEach(function(link){
     if(!offer)return;
     if(window.matchMedia('(max-width: 600px)').matches){
       event.preventDefault();
-      var mobileTarget=offer.getBoundingClientRect().top+window.pageYOffset+260;
+      var stickyEssential=link.closest('.sticky')?document.querySelector('#plano-essencial'):null;
+      var mobileDestination=stickyEssential||offer;
+      var mobileTarget=mobileDestination.getBoundingClientRect().top+window.pageYOffset-12;
       window.scrollTo({top:mobileTarget,behavior:'smooth'});
-      history.replaceState(null,'','#oferta');
+      history.replaceState(null,'',stickyEssential?'#plano-essencial':'#oferta');
     }else if(window.matchMedia('(min-width: 601px)').matches){
       event.preventDefault();
       var desktopTarget=offer.getBoundingClientRect().top+window.pageYOffset+510;
