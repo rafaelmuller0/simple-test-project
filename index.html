@@ -297,9 +297,10 @@ main>section:first-of-type .chip{display:flex;align-items:center;gap:9px;min-hei
 #oferta .plan-essential{border:1px solid #ead9ca;background:#fffaf5;box-shadow:0 8px 24px rgba(50,29,18,.06)}
 #oferta .plan-essential h2{color:#6b5144}
 #oferta #plano-premium{scroll-margin-top:24px}
-#oferta .plan-upgrade-link{display:block;margin:14px auto 0;padding:15px 16px;width:100%;border:2px solid #9a5a25;border-radius:12px;background:linear-gradient(110deg,#f5c879,#e5a64f);color:#321b10;text-align:center;text-decoration:none;font:900 14px/1.35 "Plus Jakarta Sans",Arial,sans-serif;letter-spacing:.035em;box-shadow:0 5px 0 #a9682e,0 10px 20px rgba(154,90,37,.18);transition:background .2s,transform .2s,box-shadow .2s}
+#oferta .plan-upgrade-link{display:none;margin:14px auto 0;padding:15px 16px;width:100%;border:2px solid #9a5a25;border-radius:12px;background:linear-gradient(110deg,#f5c879,#e5a64f);color:#321b10;text-align:center;text-decoration:none;font:900 14px/1.35 "Plus Jakarta Sans",Arial,sans-serif;letter-spacing:.035em;box-shadow:0 5px 0 #a9682e,0 10px 20px rgba(154,90,37,.18);transition:background .2s,transform .2s,box-shadow .2s}
 #oferta .plan-upgrade-link:hover{background:linear-gradient(110deg,#ffda91,#efb35e);transform:translateY(-2px);box-shadow:0 7px 0 #a9682e,0 13px 24px rgba(154,90,37,.22)}
-#oferta .plan-upgrade-note{display:block;margin:8px auto 0;color:#9a5a25;text-align:center;font-size:11px;font-weight:700;line-height:1.4}
+#oferta .plan-upgrade-note{display:none;margin:8px auto 0;color:#9a5a25;text-align:center;font-size:11px;font-weight:700;line-height:1.4}
+@media(max-width:600px){#oferta .plan-upgrade-link,#oferta .plan-upgrade-note{display:block}}
 #oferta .plan-premium{position:relative;isolation:isolate;overflow:hidden;border:3px solid #d99550!important;background:linear-gradient(155deg,#fff8e9 0%,#fff 58%,#fff1d8 100%);box-shadow:0 18px 42px rgba(116,69,25,.18),0 0 0 5px rgba(217,149,80,.13);transform:scale(1.015)}
 #oferta .plan-premium:before{content:"RECOMENDADO · VERSÃO MAIS COMPLETA";display:block;margin:-1px -1px 18px;padding:13px 12px;background:linear-gradient(90deg,#d99550,#f0bd68);color:#321b10;text-align:center;font-size:12px;font-weight:900;letter-spacing:.09em;border-radius:10px}
 #oferta .plan-premium h2{color:#351b10}
